@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-position: center;
+    align-items: center;
+    flex: 1 1 100vw;
+    background-color: #F9BEA0;
+  }
+  
+  /* --- HEADER --- */
+  header {
+    display: flex;
+    justify-content: space-between;
+    flex: 10 10 100%;
+    background: #7D2F18;
+    position: relative;
+  }
+  
+  #logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  #logo img {
+    max-width: 40%;
+    margin-right: 11px;
+    margin: 17.5px;
+  }
+
+  
+@media (max-width: 768px) {
+  #logo  img {
+    width: 80%;
+    margin: 10px;
+  }
+}
+  
+  #logo a {
+    text-decoration: none;
+  }
+  
+  /* --- NAV --- */
+  nav {
+    background-color: #ffffff;
+    display: flex;
+    flex: 1 1 100vw;
+    justify-content: center;
+  }
+  
+  .navegador_lista {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .navegador_lista a {
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: #1e1e1e;
+    text-align: center;
+  }
+  
+  .navegador_lista li {
+    display: flex;
+    margin-right: 20px;
+    display: inline-block;
+    padding-right: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icones_navegaçao {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding-top: 3px;
+    text-align: right;
+    width: 20%;
+  }
+  
+  .icones_acesso {
+    width: 22px;
+  }
+  
+  .icones_navegaçao li {
+    padding: 0px 15px 0px;
+    display: inline-block;
+    
+  }
+
+/* configuracao do nav (icones) para telas menores:  */
+@media (max-width: 768px) {
+  .icones_acesso {
+    width: 17px;
+  }
+
+  .navegador_lista li {
+    font-size: 12px;
+  }
+  
+}
+
+/* --- MAIN/ PERFIL --- */
+#container-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  background-position: center center;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 5%;
+  max-width: 950px;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  gap: 30px;
+}
+
+
+#perfil-foto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 150px;
+  padding-right: 30px;
+}
+
+#perfil-foto img {
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+#perfil-nome {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #585a5a;
+  text-align: start;
+}
+
+
+@media (max-width:768px) {
+  #container-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+  }
+
+  #perfil-foto {
+    padding-bottom: 10px;
+    padding-top: 20px;
+    
+  }
+
+  #perfil-foto img {
+    height: 170px;
+  
+  }
+
+  #perfil-colums {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #perfil-nome{
+    margin-top: 0px;
+    font-size: 15px;
+    text-shadow: 0 0 10px rgba(134, 131, 131, 0.5);
+  }
+}
+
+#lista-contatos {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: start;
+}
+
+#lista-contatos li {
+  list-style: none;
+  color: #767a79;
+  margin-bottom: 10px;
+  text-align: start;
+}
+
+#endereco,
+#contato,
+#formulario {
+  display: flex;
+  flex-direction: row;
+  gap: 9px;
+}
+
+#formulario a {
+  text-decoration: none;
+  color: #767a79;
+}
+
+#animais {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  gap: 30px;
+}
+
+
+#animais h3 {
+  border: none;
+  padding: 20px;
+  max-width: 50%;
+  border-radius: 5px;
+  font-size: 15px;
+  color: white;
+  background-color: #7D2F18;
+  text-align: center;
+}
+
+#status-avaliação {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#status-avaliação h2 {
+  color: #585a5a;
+  font-size: 25px;
+  text-align: start;
+}
+
+#status-avaliação a {
+  display: flex;
+  margin-top: 10px;
+  background-color: #7D2F18;
+  border: none;
+  padding: 25px;
+  max-width: 70%;
+  border-radius: 5px;
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+/*--------*/
+
+@media (max-width: 768px) {
+  #animais {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  #animais h3 {
+    max-width: 100%;
+  }
+
+  #status-avaliação h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  #status-avaliação a {
+    max-width: 100%;
+    font-size: 12px;
+  }
+}
+
+
+/* --- FOOTER / RODAPÉ --- */
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #7D2F18;
+    padding: 10px;
+  }
+  
+  .rodape_principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adicionando o space-between para colocar os itens nas laterais */
+  }
+  
+  .lado_esquerdo {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .lado_direito {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .rodape_direito {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+  }
+  
+  .rodape_esquerdo {
+    padding:10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+  } /* Adicionei o espaçamento para os lados nas letras*/
+  
+    /* configuraçao do rodapé para telas menores */
+    @media (max-width: 600px) {
+      .rodape_principal a {
+        font-size: 12px;
+    
+      }
+    }
+  

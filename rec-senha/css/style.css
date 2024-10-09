@@ -1,0 +1,287 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400&display=swap%27%29%3B
+);
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 100vw;
+}
+
+/* --- HEADER --- */
+header {
+  display: flex;
+  justify-content: space-between;
+  flex: 10 10 100%;
+  background: #7D2F18;
+  position: relative;
+}
+
+#logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#logo img {
+  max-width: 40%;
+  margin-right: 11px;
+  margin: 17.5px;
+}
+
+@media (max-width: 768px) {
+  #logo  img {
+    width: 80%;
+    margin: 10px;
+  }
+}
+
+#logo a {
+  text-decoration: none;
+}
+
+/* --- NAV --- */
+nav {
+  background-color: #ffffff;
+  display: flex;
+  flex: 1 1 100vw;
+  justify-content: center;
+}
+
+.navegador_lista {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.navegador_lista a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  color: #1e1e1e;
+  text-align: center;
+}
+
+.navegador_lista li {
+  display: flex;
+  margin-right: 20px;
+  display: inline-block;
+  padding-right: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.icones_navegaçao {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  padding-top: 3px;
+  text-align: right;
+  width: 20%;
+}
+
+.icones_acesso {
+  width: 22px;
+}
+
+.icones_navegaçao li {
+  padding: 0px 15px 0px;
+  display: inline-block;
+  
+}
+/* configuracao do nav (icones) para telas menores:  */
+@media (max-width: 768px) {
+  .icones_acesso {
+    width: 17px;
+  }
+
+  .navegador_lista li {
+    font-size: 12px;
+  }
+  
+}
+
+
+/* --- MAIN --- */
+/*rec-senha*/
+#container{
+  height: 100vh;
+  width: 100%;
+  background: #F9BEA0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url(../image/possivel_fundo-removebg-preview.png);
+  background-repeat:no-repeat;
+  background-position: bottom right;
+  background-size: 500px;
+}
+
+
+#rec_senha_form{
+  background-color: #ffffffab;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 100px;
+  border-radius: 10px;
+  gap: 15px;
+  box-shadow: 5px 5px 8px rgba(#fff, #fff, #fff, 0.336);
+  height: fit-content;
+}
+
+#form_header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#form_header h1{
+  font-size: 30px;
+  color: #7D2F18;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  #rec_senha_form {
+    width: 350px;
+    padding: 50px 70px;
+  }
+
+  #form_header h1 {
+    font-size: 20px;
+    position: absolute;
+    padding-bottom: 20px;
+  }
+}
+
+#inputs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.input-box{
+  font-size: 14px;
+  color: #847F7B;
+}
+
+.input-field{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 3px;
+  cursor: text;
+  border-bottom: 1px solid #847F7B;
+}
+
+.input-field i{
+  font-size: 18px;
+  color: #847F7B;
+}
+
+.input-field input{
+  border: none;
+  background-color: transparent;
+  width: 260px;
+  font-size: 15px;
+  padding: 0px 5px;
+}
+
+.input-field input:focus{
+  outline: none; /*marcação de campo*/
+ }
+
+.rec_senha_button{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  border: none;
+  background-color: #7D2F18;
+  color: #fff;
+  padding: 3.5px;
+  font-size: 15px bold;
+  border-radius: 10px;
+  font-weight: bold;
+
+}
+
+.rec_senha_button:hover{
+  transform: scale(1.05);
+}
+
+
+/* --- ASIDE --- */
+aside {
+  display: flex;
+  justify-content: center;
+  flex: 1 1 100vw;
+  background: #F9BEA0;
+}
+
+/* --- FOOTER --- */
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #7D2F18;
+  padding: 10px;
+}
+
+.rodape_principal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adicionando o space-between para colocar os itens nas laterais */
+}
+
+.lado_esquerdo {
+  display: flex;
+  flex-direction: row;
+}
+
+.lado_direito {
+  display: flex;
+  flex-direction: column;
+}
+
+.rodape_direito {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.rodape_esquerdo {
+  padding:10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+} /* Adicionei o espaçamento para os lados nas letras*/
+
+
+  /* configuraçao do rodapé para telas menores */
+  @media (max-width: 600px) {
+    .rodape_principal a {
+      font-size: 12px;
+  
+    }
+  }
+
+
+
+
+
+

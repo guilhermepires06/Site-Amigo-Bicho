@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100vw;
+    background-color: #F9BEA0;
+  }
+  
+  /* --- HEADER --- */
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100vw;
+    background-color: #F9BEA0;
+  }
+  
+  /* --- HEADER --- */
+  header {
+    display: flex;
+    justify-content: space-between;
+    flex: 10 10 100%;
+    background: #7D2F18;
+    position: relative;
+  }
+  
+  #logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  #logo img {
+    max-width: 40%;
+    margin-right: 11px;
+    margin: 17.5px;
+  }
+  
+  @media (max-width: 768px) {
+    #logo  img {
+      width: 80%;
+      margin: 10px;
+    }
+  }
+
+  
+  #logo a {
+    text-decoration: none;
+  }
+  
+  /* --- NAV --- */
+  nav {
+    background-color: #ffffff;
+    display: flex;
+    flex: 1 1 100vw;
+    justify-content: center;
+  }
+  
+  .navegador_lista {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .navegador_lista a {
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: #1e1e1e;
+    text-align: center;
+  }
+  
+  .navegador_lista li {
+    display: flex;
+    margin-right: 20px;
+    display: inline-block;
+    padding-right: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icones_navegaçao {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding-top: 3px;
+    text-align: right;
+    width: 20%;
+  }
+  
+  .icones_acesso {
+    width: 22px;
+  }
+  
+  .icones_navegaçao li {
+    padding: 0px 15px 0px;
+    display: inline-block;
+    
+  }
+  
+/* configuracao do nav (icones) para telas menores:  */
+@media (max-width: 768px) {
+  .icones_acesso {
+    width: 17px;
+  }
+
+  .navegador_lista li {
+    font-size: 12px;
+  }
+  
+}
+
+
+/* --- MAIN/CONTAINER DUVIDAS --- */
+
+main {
+    
+    background-image: url(../imagens/pets.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center center;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container_requisitos {
+    background-color: #ffffffce;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 100px;
+    padding: 50px 100px;
+    border-radius: 10px;
+    gap: 15px;
+    box-shadow: 5px 5px 8px rgba(#fff, #979393, #666565, 0.336);
+    height: fit-content;
+    opacity: 80%;
+    
+}
+
+.titulo h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #3e4140;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    text-shadow: 2px 2px 4px rgba(68, 67, 67, 0.5);
+    
+}
+
+.paragrafo_requisitos{
+    color: #3e4140;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: justify;
+    font-weight: bold;
+    text-indent: 20px;
+    text-decoration: none;
+    
+}
+
+
+.topicos_duvidas ul li p {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: #3e4140;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: justify;
+    font-weight: bold;
+    padding-left: 20px;
+    text-decoration: none; 
+}
+
+.me_adota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    
+
+}
+
+.me_adota p {
+    margin-top: 15px;
+    color: #3e4140;
+    font-family: 'Atma', cursive;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.me_adota a {
+    text-decoration: none;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+  #container_requisitos {
+    margin: 30px 60px;
+    padding: 30px 50px;
+  }
+
+  .titulo h1 {
+    font-size: 18px;
+  }
+
+  .paragrafo_requisitos {
+    font-size: 15px;
+  }
+
+  .topicos_duvidas ul li p {
+    font-size: 15px;
+  }
+
+  .me_adota p {
+    font-size: 17px;
+  }
+
+  .me_adota {
+    padding-top: 15px;
+  }
+}
+
+
+/* --- FOOTER / RODAPÉ --- */
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #7D2F18;
+    padding: 10px;
+  }
+  
+  .rodape_principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adicionando o space-between para colocar os itens nas laterais */
+  }
+  
+  .lado_esquerdo {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .lado_direito {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .rodape_direito {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+  }
+  
+  .rodape_esquerdo {
+    padding:10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+  } /* Adicionei o espaçamento para os lados nas letras*/
+  
+  /* configuraçao do rodapé para telas menores */
+  @media (max-width: 600px) {
+    .rodape_principal a {
+      font-size: 12px;
+  
+    }
+  }
